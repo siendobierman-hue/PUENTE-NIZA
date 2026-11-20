@@ -29,12 +29,12 @@
 </header>
 <model-viewer id="mv" src="puente_entorno.glb" ios-src="puente_entorno.usdz" alt="Modelo 3D del Puente Niza"
   ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ar-placement="floor"
-  camera-controls touch-action="pan-y" camera-orbit="35deg 60deg auto" shadow-intensity="1" exposure="1.05"
+  autoplay camera-controls touch-action="pan-y" camera-orbit="35deg 60deg auto" shadow-intensity="1" exposure="1.05"
   environment-image="neutral">
   <div class="bar" slot="progress-bar" id="bar"></div>
   <button slot="ar-button" class="ar-btn">Ver en tu espacio (AR)</button>
 </model-viewer>
-<footer>Maqueta a escala <span id="esc">1:400</span>. Gira con un dedo y acerca con dos. Pulsa el botón azul, apunta al piso o a una mesa y pellizca para cambiar el tamaño.</footer>
+<footer>Animación: el puente se construye por etapas y luego circulan los carros. Maqueta a escala <span id="esc">1:400</span>. Gira con un dedo y acerca con dos. Pulsa el botón azul, apunta al piso o a una mesa y pellizca para cambiar el tamaño.</footer>
 <script>
   const mv = document.getElementById('mv'), bar = document.getElementById('bar');
   const set = (n) => {
